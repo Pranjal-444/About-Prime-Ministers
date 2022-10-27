@@ -1,2 +1,2 @@
-# About-Prime-Ministers
+# Prime-Ministers
 This repository is about Indian Prime Ministers.
