@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background: #111123;
+} 
+/* ---Preloader CSS---{ */
+#preloader{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+#preloader .loader{
+    background: #ff6a00;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    border-radius: 50%;
+    animation: loader 0.6s linear infinite alternate;
+} 
+@keyframes loader {
+    100%{
+        transform: translateY(-25px);
+    }
+}
+#preloader .loader:nth-child(2){
+    animation-delay: 0.25s;
+    background: #ffffff;
+}
+#preloader .loader:nth-child(3){
+    animation-delay: 1s;
+    background: #008000;
+}
+/* ---Preloader CSS---} */
+
+#content{
+    display: none;
+}
+/*---Background CSS--{*/
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url('Images/Banner.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*---Background CSS---}*/
+.arrow {
+    top: 60%;
+    display: block;
+    position: absolute;
+    padding: 10px;
+    margin-left: 60%;
+}
+.arrow a {
+    margin: 3px;
+    padding: 3px;
+    font-size: 5rem;
+    color: #ffffff;
+    background: transparent;
+    text-decoration: none;
+}
+.arrow a:hover{
+    margin: 3px;
+    padding: 3px;
+    padding-top: 2px;
+    font-size: 5.5rem;
+}
+.r-more {
+    color: #fffeeb;
+    text-decoration: none;
+    background-color: transparent;
+}
+.r-more:hover {
+    margin: 3px;
+    padding: 3px;
+    padding-top: 1px;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    transition: 0.10s all;
+}
+.img {
+    right: 50%;
+    display: block;
+    cursor: pointer;
+    margin: 20px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #000;
+}
+.PM-txt {
+    text-align: center;
+    margin: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    color: #f2e9e4;
+    background-color: #111123;
+    border: 1px dashed #ffffff;
+}
+.PM-txt:hover{
+    box-shadow: 5px 5px 12px #111123;
+}
+.bold_text, b, i {
+    color: #ffffff;
+}
+.txt {
+    background: #4a4e69;
+    flex-basis: 98%;
+    margin: 10px;
+    padding: 0 0 70px 0;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #f2e9e4;
+}
+.Singh-txt {
+    background: #4a4e69;
+    flex-basis: 98%;
+    margin: 10px;
+    padding: 0 0 80px 0;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #f2e9e4;
+}
+.text {
+    background: #4a4e69;
+    flex-basis: 98%;
+    margin: 10px;
+    padding: 0 0 70px 0;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #f2e9e4;
+}
+
+/*---Media Queries---{*/
+@media (max-width: 825px) {
+.background {
+    width: 100%;
+    height: 80vh;
+    background-image: url('Images/Banner.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+}
+@media (max-width: 800px) {
+.arrow{
+    display: none;
+}
+}
+@media (max-width: 460px) {
+.img {
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 5px;
+    height: 160px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #000;
+}
+}
+@media (max-width: 380px) {
+.img {
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 5px;
+    height: 130px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #000;
+    }
+}
+@media (max-width: 351px) {
+.img {
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 5px;
+    height: 110px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #000;
+}
+}    
+/*---Media Queries---}*/
+
+/*---Footer CSS---{*/
+.footer{
+    margin: 10px;
+    padding: 10px;
+    flex-basis: 98%;
+    border: 3px solid #111123;
+    border-radius: 10px;
+    background: #fffeeb;
+}
+icon-icon {
+    visibility: visible;
+}
+.heart {
+    font-size: 24px;
+    color: #4a4e69;
+    visibility: visible;
+}
+.foot-txt{
+    padding-bottom: 2px;
+    font-size: 1rem;
+    text-align: center;
+}
+.Italic{
+    color: #111123;
+    text-align: center;
+}
+.Bold, span{
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+/*---Footer CSS---}*/
